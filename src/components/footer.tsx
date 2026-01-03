@@ -36,7 +36,7 @@ export default function Footer() {
     },
     {
       name: "Email",
-      href: "mailto:contact.niloybhowmick@gmail.com",
+      href: "mailto:humayunedits@gmail.com",
       icon: Mail,
     },
   ];
@@ -47,7 +47,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">Niloy Bhowmick</h3>
+            <h3 className="text-xl font-bold">Humayun Edits</h3>
             <p className="text-gray-400 text-sm">
               Video Editor and Motion Graphics Designer passionate about
               creating visual stories with style, precision, and cinematic
@@ -113,11 +113,11 @@ export default function Footer() {
           <p className="text-gray-400 text-sm flex items-center justify-center gap-1">
             Made with <Heart className="text-red-500" size={16} /> by{" "}
             <a
-              href="https://www.linkedin.com/in/mdmarufsarker/"
+              href="https://github.com/enzoha6ks"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Md. Maruf Sarker
+              Enzoha6ks
             </a>{" "}
             © {currentYear}
           </p>
