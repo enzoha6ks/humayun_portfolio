@@ -9,47 +9,104 @@ import { Mail, MapPin, Clock, Send, MessageCircle } from "lucide-react";
 import { toast } from "sonner"
 
 export default function ContactPage() {
+  // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+
+  //   const form = e.currentTarget;
+  //   const formData = new FormData(form);
+
+  //   const name = formData.get("name") as string;
+  //   const email = formData.get("email") as string;
+  //   const message = formData.get("message") as string;
+  //   const projectType = formData.get("project-type") as string;
+  //   const timeline = formData.get("timeline") as string;
+
+  //   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  //   if (!emailRegex.test(email)) {
+  //     toast("Please enter a valid email address.")
+  //     return;
+  //   }
+
+  //   if (!message || message.length < 30) {
+  //     toast("Message should be at least 30 characters long.");
+  //     return;
+  //   }
+
+  //   const res = await fetch("/api/send-email", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify({ name, email, message, projectType, timeline }),
+  //   });
+
+  //   const result = await res.json();
+
+  //   if (res.ok) {
+  //     toast("Message sent successfully!");
+  //     form.reset();
+  //   } else {
+  //     toast(result.error || "Something went wrong.");
+  //   }
+  // };
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    const form = e.currentTarget;
-    const formData = new FormData(form);
+  const form = e.currentTarget;
+  const formData = new FormData(form);
 
-    const name = formData.get("name") as string;
-    const email = formData.get("email") as string;
-    const message = formData.get("message") as string;
-    const projectType = formData.get("project-type") as string;
-    const timeline = formData.get("timeline") as string;
+  const name = formData.get("name") as string;
+  const email = formData.get("email") as string;
+  const message = formData.get("message") as string;
+  const projectType = formData.get("project-type") as string;
+  const timeline = formData.get("timeline") as string;
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!emailRegex.test(email)) {
-      toast("Please enter a valid email address.")
-      return;
-    }
+  if (!emailRegex.test(email)) {
+    toast("Please enter a valid email address.");
+    return;
+  }
 
-    if (!message || message.length < 30) {
-      toast("Message should be at least 30 characters long.");
-      return;
-    }
+  if (!message || message.length < 30) {
+    toast("Message should be at least 30 characters long.");
+    return;
+  }
 
+  try {
     const res = await fetch("/api/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ name, email, message, projectType, timeline }),
+      body: JSON.stringify({
+        name,
+        email,
+        message,
+        projectType,
+        timeline,
+      }),
     });
 
-    const result = await res.json();
+    let result = null;
+
+    // 🔥 Prevent JSON parse crash
+    if (res.headers.get("content-type")?.includes("application/json")) {
+      result = await res.json();
+    }
 
     if (res.ok) {
       toast("Message sent successfully!");
       form.reset();
     } else {
-      toast(result.error || "Something went wrong.");
+      toast(result?.error || "Failed to send message.");
     }
-  };
+  } catch (error) {
+    toast("Network error. Please try again later.");
+  }
+};
+
 
   return (
     <div className="min-h-screen py-20 px-4">

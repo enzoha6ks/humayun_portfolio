@@ -171,6 +171,8 @@ import { Toaster } from "@/components/ui/sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+   metadataBase: new URL("https://humayunjavaid.com"),
+  
   title: {
     default: "Humayun Javaid – Video Editor & Motion Graphics Designer",
     template: "%s | Humayun Javaid",
@@ -195,7 +197,7 @@ export const metadata: Metadata = {
     "Lower Thirds",
     "Audio Sync",
   ],
-  authors: [{ name: "Humayun Javaid", url: "https://www.itsniloy.me" }],
+  authors: [{ name: "Humayun Javaid", url: "https://humayunjavaid.com" }],
   creator: "Humayun Javaid",
   publisher: "Humayun Javaid",
   robots: {
