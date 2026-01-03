@@ -61,7 +61,7 @@ export default function AboutPage() {
                 {/* Social Icons */}
                 <div className="flex justify-center gap-4">
                   <a
-                    href="https://www.linkedin.com/in/niloy-bhowmick"
+                    href="https://www.linkedin.com/in/humayun-javaid-%F0%9F%8C%9F-video-editor-721a14232/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-blue-500 transition-colors"
@@ -69,7 +69,7 @@ export default function AboutPage() {
                     <Linkedin size={24} />
                   </a>
                   <a
-                    href="https://www.instagram.com/its.niloybhowmick"
+                    href="https://www.instagram.com/humayunjavaid19/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-pink-500 transition-colors"
@@ -77,7 +77,7 @@ export default function AboutPage() {
                     <Instagram size={24} />
                   </a>
                   <a
-                    href="https://www.facebook.com/Its.niloybhowmick"
+                    href="https://www.facebook.com/people/Humayun-Javaid/100088034833053/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-blue-600 transition-colors"
@@ -85,21 +85,21 @@ export default function AboutPage() {
                     <Facebook size={24} />
                   </a>
                   <a
-                    href="https://www.youtube.com/@itsniloybhowmick"
+                    href="https://www.youtube.com/@humayun_explains"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-red-600 transition-colors"
                   >
                     <Youtube size={24} />
                   </a>
-                  <a
+                  {/* <a
                     href="https://github.com/Zan-getsu"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     <Github size={24} />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </GlassmorphismCard>

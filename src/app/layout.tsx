@@ -219,7 +219,7 @@ export const metadata: Metadata = {
     siteName: "Humayun Javaid Portfolio",
     images: [
       {
-        url: "/humayunjavaid.png",
+        url: "/humayunjavaid.jpg",
         width: 1200,
         height: 630,
         alt: "Humayun Javaid - Video Editor & Motion Graphics Designer",
@@ -265,7 +265,7 @@ export default function RootLayout({
               image: "/humayunjavaid.png",
               sameAs: [
                 "https://www.itsniloy.me",
-                "https://linkedin.com/in/humayunjavaid",
+                "https://www.linkedin.com/in/humayun-javaid-%F0%9F%8C%9F-video-editor-721a14232/",
                 "https://youtube.com/@humayunjavaid",
                 "https://instagram.com/humayunjavaid",
               ],

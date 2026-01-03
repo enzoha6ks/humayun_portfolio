@@ -358,7 +358,41 @@ export const allVideoProjects: VideoProject[] = [
   //   duration: "1:30",
   //   software_used: ["After effects"],
   // },
-  
+     {
+    id: "xUBrp6zJjH8",
+    video_title:
+      "Why The NEOM Project Will NEVER Be Completed",
+    video_description: ``,
+    tags: ["Explainer" ,  ],
+    cover_image: "xUBrp6zJjH8",
+    publish_date: "2025-03-02",
+    client_name: "Lavish Woo",
+    client_image: "/companies/lawish_woo.png",
+    client_feedback: "Reliable, creative, and always on deadlines. Highly recommend!",
+    video_link: "https://youtu.be/xUBrp6zJjH8?si=IG5WF4svHq27G3CP",
+    project_images: [],
+    category: ["Talking Head", "Explainer" ],
+    duration: "6:20",
+    software_used: ["Adobe Premiere Pro"],
+  },
+    {
+    id: "z55_X3RqUSU",
+    video_title:
+      "How Dubai is Living in the Future!",
+    video_description: ``,
+    tags: ["Explainer" ,  ],
+    cover_image: "z55_X3RqUSU",
+    publish_date: "2025-03-02",
+    client_name: "Lavish Woo",
+    client_image: "/companies/lawish_woo.png",
+    client_feedback: "Great communication, great pacing, great results.",
+    video_link: "https://youtu.be/z55_X3RqUSU?si=RmBTEMkoPJbxTs57",
+    project_images: [],
+    category: ["Talking Head", "Explainer" ],
+    duration: "6:36",
+    software_used: ["Adobe Premiere Pro"],
+  },
+   
   {
     id: "Lb7f_JXwl1M",
     video_title:
@@ -376,7 +410,25 @@ export const allVideoProjects: VideoProject[] = [
     duration: "10:20",
     software_used: ["Adobe Premiere Pro"],
   },
+ 
   {
+    id: "N6QCC1aSCcY",
+    video_title:
+      "Nikola Tesla’s Secret Invention",
+    video_description: `humayun ahmed style storytelling video on wealth mindset and financial freedom.`,
+    tags: ["Stress Relief", "Mental Health", "Wellness"],
+    cover_image: "N6QCC1aSCcY",
+    publish_date: "2025-05-02",
+    client_name: "humayun",
+    client_image: "/companies/growthleo.png",
+    client_feedback: "",
+    video_link: "https://youtube.com/shorts/N6QCC1aSCcY?feature=share",
+    project_images: [],
+    category: [ "Explainer"],
+    duration: "0:45",
+    software_used: ["After effects"],
+  },
+   {
     id: "Nkf5ljZHQ2s",
     video_title:
       "How I brainwashed myself to be rich",
@@ -393,23 +445,7 @@ export const allVideoProjects: VideoProject[] = [
     duration: "10:20",
     software_used: ["After effects"],
   },
-  {
-    id: "N6QCC1aSCcY",
-    video_title:
-      "How I br",
-    video_description: `humayun ahmed style storytelling video on wealth mindset and financial freedom.`,
-    tags: ["Stress Relief", "Mental Health", "Wellness"],
-    cover_image: "N6QCC1aSCcY",
-    publish_date: "2025-05-02",
-    client_name: "humayun",
-    client_image: "/companies/growthleo.png",
-    client_feedback: "",
-    video_link: "https://youtube.com/shorts/N6QCC1aSCcY?feature=share",
-    project_images: [],
-    category: [ "Explainer"],
-    duration: "0:45",
-    software_used: ["After effects"],
-  },
+
   {
     id: "Bkwo54hscPM",
     video_title:
@@ -479,40 +515,7 @@ export const allVideoProjects: VideoProject[] = [
     duration: "6:58",
     software_used: ["Adobe Premiere Pro"],
   },
-    {
-    id: "xUBrp6zJjH8",
-    video_title:
-      "Why The NEOM Project Will NEVER Be Completed",
-    video_description: ``,
-    tags: ["Explainer" ,  ],
-    cover_image: "xUBrp6zJjH8",
-    publish_date: "2025-03-02",
-    client_name: "Lavish Woo",
-    client_image: "/companies/lawish_woo.png",
-    client_feedback: "Reliable, creative, and always on deadlines. Highly recommend!",
-    video_link: "https://youtu.be/xUBrp6zJjH8?si=IG5WF4svHq27G3CP",
-    project_images: [],
-    category: ["Talking Head", "Explainer" ],
-    duration: "6:20",
-    software_used: ["Adobe Premiere Pro"],
-  },
-    {
-    id: "z55_X3RqUSU",
-    video_title:
-      "How Dubai is Living in the Future!",
-    video_description: ``,
-    tags: ["Explainer" ,  ],
-    cover_image: "z55_X3RqUSU",
-    publish_date: "2025-03-02",
-    client_name: "Lavish Woo",
-    client_image: "/companies/lawish_woo.png",
-    client_feedback: "Great communication, great pacing, great results.",
-    video_link: "https://youtu.be/z55_X3RqUSU?si=RmBTEMkoPJbxTs57",
-    project_images: [],
-    category: ["Talking Head", "Explainer" ],
-    duration: "6:36",
-    software_used: ["Adobe Premiere Pro"],
-  },
+ 
     {
     id: "dgW9kj8RAIg",
     video_title:
