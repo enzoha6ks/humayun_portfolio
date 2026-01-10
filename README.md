@@ -1,4 +1,4 @@
-# HUMAYUN JAVAID (Portfolio)
+# HUMAYUN JAVAID (Portfolio) For Client
 
 A personal portfolio built with Next.js and Tailwind CSS showcasing projects, skills, and contact functionality.
 
